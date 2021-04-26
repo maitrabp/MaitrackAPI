@@ -4,7 +4,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 maitrack_db.sql
-application.properties
+
+### Sensitive Data ###
+src/main/resources/application.properties
+
 
 
 ### STS ###
