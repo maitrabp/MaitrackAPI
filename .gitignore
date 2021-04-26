@@ -4,7 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 maitrack_db.sql
-.properties
+application.properties
 
 
 ### STS ###
@@ -31,6 +31,5 @@ maitrack_db.sql
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-/src/main/resources/application.properties
 ### VS Code ###
 .vscode/
