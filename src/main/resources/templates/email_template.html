@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Email Verification Code</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link rel="preconnect" href="" th:href="@{https://fonts.gstatic.com}"/>
+    <link href="" th:href="@{https://fonts.googleapis.com/css2?family=Bangers&display=swap}" rel="stylesheet"/> <!--URL ISSUE IF STYLING NOT APPLIED-->
+    <link href="" th:href="@{https://fonts.googleapis.com/css2?family=Bangers&family=Yellowtail&display=swap}" rel="stylesheet"/> <!--URL ISSUE IF STYLING NOT APPLIED-->
+    <link rel="stylesheet" href = "" th:href="@{../css/bootstrap.min.css}"/> <!--URL ISSUE IF STYLING NOT APPLIED-->
+    <!-- CSS Reset : BEGIN -->
+</head>
+
+<body>
+    <div class="card text-center shadow-sm p-3 mb-5 bg-white rounded">
+        <div class="card-header" >
+            <h2 style="font-family: 'Bangers', cursive;">Email Confirmation</h2>
+        </div>
+        <div class="card-body">
+            <h4 class="card-text"><span class = "font-weight-normal"><p th:text="'Hi ' + ${firstName} + ','" /></span></h4>
+            <p class="card-text">You are almost ready to start managing your job search using MaiTrack!</p>
+            <p class="card-text">To successfully register with us, please copy the following code and paste it when prompted during registration.</p>
+            <h4> <span class = "badge badge-primary" style="background-color: #0021FF; color:#ffffff">Verification Code: </span> <span class="badge badge-light"><p th:text="${token}" /></span></h4>
+            <hr>
+            <img src = "" th:src="@{../img/maitrackLogo.png}" alt="Logo" class="rounded-sm" height="50" width="50"/> <!--URL ISSUE IF STYLING NOT APPLIED-->
+            <h4 class="card-text"><span style="font-family: 'Yellowtail', cursive; color:#0021FF;">Thanks for choosing MaiTrack. Happy Job Hunting!</span></h4>
+        </div>
+        <div class="card-footer text-muted" style="font-size: small;">
+           Copyright &#169; 2020 MaiTrack, All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
