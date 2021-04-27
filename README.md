@@ -6,4 +6,5 @@
 
 
 - [x] Login (JWT)
+
 ![alt text](https://user-images.githubusercontent.com/58008518/116295942-a19fb300-a767-11eb-85ed-cb00cce2538f.PNG "Logging in a user using the Login API endpoint.")
