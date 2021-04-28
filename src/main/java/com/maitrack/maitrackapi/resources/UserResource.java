@@ -73,8 +73,8 @@ public class UserResource {
     }
 
     private String myEncrypt(String t){
-        Random r = new Random();
-        char x = (char)(r.nextInt(26) + 'a');
+//        Random r = new Random();
+//        char x = (char)(r.nextInt(26) + 'a');
 
         t = "e" + t + "x";
 
