@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService{
         final String PASSWORD_PATTERN = "^" +
                 "(?=.*[0-9])" + //# positive lookahead, digit [0-9]
                 "(?=.*[a-z])" + //# positive lookahead, one lowercase character [a-z]
-                "(?=.*[!@#*&()–[{}]:;',?/*~$^+=<>])" + // # positive lookahead, one of the special character in this [..]
+                "(?=.*[!@#*&])" + // # positive lookahead, one of the special character in this [..]
                 "." +                        // # matches anything
                 "{8,20}" + //# length at least 8 characters and maximum of 20 characters
                 "$"; //# end of line
@@ -66,9 +66,8 @@ public class UserServiceImpl implements UserService{
             throw new MTAuthException("Password must contain:\n" +
                     "A digit [0-9],\n" +
                     "one lowercase character [a-z],\n" +
-                    "one uppercase character [A-Z],\n" +
                     "one of the special character [!@#*&()],\n" +
-                    "at least 8 characters and maximum of 20 characters,\n");
+                    "at least 8 characters and maximum of 20 characters.");
         }
     }
 
